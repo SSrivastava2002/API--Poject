@@ -9,12 +9,15 @@
 import UIKit
 
 class EpisodeViewController: UITableViewController {
-
+    
+    var episode = [[String: String]]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.title = "Episode idk "
+        let query = "http://api.tvmaze.com/shows/1/episodes?specials=1"
     }
-
-
+    
+    
 }
 
